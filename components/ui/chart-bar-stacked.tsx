@@ -4,24 +4,24 @@ import { useEffect, useState } from "react"
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
 
 import {
-    Card,
-    CardContent,
-    CardFooter,
-    CardHeader,
-    CardTitle
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle
 } from "@/components/ui/card"
 import {
-    ChartContainer,
-    ChartLegend,
-    ChartLegendContent,
-    ChartTooltip,
-    ChartTooltipContent,
-    type ChartConfig,
+  ChartContainer,
+  ChartLegend,
+  ChartLegendContent,
+  ChartTooltip,
+  ChartTooltipContent,
+  type ChartConfig,
 } from "@/components/ui/chart"
 
 export const description = "A stacked bar chart with a legend"
 
-const API_URL = "https://dsop.app.n8n.cloud/webhook/glpi-total-chamados"
+const API_URL = process.env.NEXT_PUBLIC_N8N_INTELIGENCIA_API_URL
 
 // Total hoje foi acumulado em 10 meses de estágio.
 // Projeção efetivada: +33% de capacidade/mês sobre a média mensal atual.
@@ -47,7 +47,7 @@ type ChartUser = {
 
 // Fallback caso a API do n8n esteja fora do ar (últimos valores conhecidos)
 const FALLBACK: UsuarioAPI[] = [
-    { nome: "Danilo", email: "danilo.neri@dsop.com.br", user_id: "470", total_chamados: 587, solucionados: 6, fechados: 560, solucionados_ou_fechados: 566, percentual_resolvido: 96.42 },
+    { nome: "Danilo", email: "danilo.neri@dsop.com.br", user_id: "470", total_chamados: 589, solucionados: 7, fechados: 561, solucionados_ou_fechados: 567, percentual_resolvido: 96.42 },
     { nome: "Isaac", email: "isaac.silva@dsop.com.br", user_id: "471", total_chamados: 562, solucionados: 7, fechados: 539, solucionados_ou_fechados: 546, percentual_resolvido: 97.15 },
 ]
 
@@ -78,6 +78,7 @@ export function ChartBarStacked({ efetivacao }: { efetivacao?: boolean }) {
   const [usuarios, setUsuarios] = useState<UsuarioAPI[]>(FALLBACK)
 
   useEffect(() => {
+    if (!API_URL) return
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
