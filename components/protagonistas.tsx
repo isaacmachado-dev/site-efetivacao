@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Protagonistas() {
     return (
         <>
-            <div className="flex flex-col mt-100 mb-20 gap-2">
+            <div id="protagonistas" className="flex flex-col mt-100 mb-20 gap-2 scroll-mt-10">
                 <div className="text-center text-brand-accent">
                     Os protagonistas
                 </div>
@@ -44,21 +44,21 @@ export function Protagonistas() {
                         </div>
                     </div>
                     <Image 
-                        src="/rock-lee.jpg"
+                        src="/isaac-3.png"
                         alt="Isaac"
-                        width={200}
-                        height={200}
-                        className="rounded-md"
+                        width={150}
+                        height={150}
+                        className="rounded-full object-cover"
                     />
                 </div>
 
                 <div className="md:ml-[10vw] flex flex-row gap-5 bg-brand-secondary p-10 rounded-3xl">
                      <Image 
-                        src="/robin.jpg"
-                        alt="Isaac"
+                        src="/danilo.jpg"
+                        alt="Danilo Neri"
                         width={200}
                         height={200}
-                        className="rounded-md"
+                        className="rounded-full object-cover"
                     />
                     
                     <div className="flex flex-col my-auto">

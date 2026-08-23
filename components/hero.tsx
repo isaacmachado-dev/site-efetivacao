@@ -4,21 +4,42 @@ import { Card } from "@/components/ui/card";
 import { SplineScene } from "@/components/ui/splite";
 import { Spotlight } from "@/components/ui/spotlight";
 import { ChevronRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export function Hero() {
+  // Só carrega o Spline 3D em telas md+ (desktop). No mobile: imagem estática.
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)");
+    setIsDesktop(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
   return (
     <Card className="w-full h-[600px] bg-brand-secondary relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
       />
-      
+
       <div className="flex flex-col md:flex-row h-full">
         {/* Right content: fundo absoluto atrás do texto no mobile; lado direito no desktop */}
         <div className="md:flex-1 md:order-2 absolute inset-0 md:relative md:inset-auto opacity-30 md:opacity-100 pointer-events-none md:pointer-events-auto">
-          <SplineScene
-            scene="/scene.splinecode"
-            className="w-full h-full"
-          />
+          {isDesktop ? (
+            <SplineScene
+              scene="/scene.splinecode"
+              className="w-full h-full"
+            />
+          ) : (
+            <img
+              src="/hero-mobile.webp"
+              alt=""
+              aria-hidden
+              className="w-full h-full object-cover object-center"
+            />
+          )}
         </div>
 
         {/* Left content */}
@@ -30,14 +51,17 @@ export function Hero() {
             Dois estagiários. 10 meses. Centenas de chamados resolvidos e infraestruturas redefinidas. Descubra por que manter esse time é a melhor decisão estratégica.
           </p>
 
-          <div className="mt-10 bg-brand-main w-full px-6 py-3 rounded-md flex flex-row box-shadow-md font-semibold text-white md:w-fit justify-between gap-2">
+          <a
+            href="#protagonistas"
+            className="mt-10 bg-brand-main w-full px-6 py-3 rounded-md flex flex-row box-shadow-md font-semibold text-white md:w-fit justify-between gap-2 hover:scale-105 transition-transform duration-300 cursor-pointer scroll-smooth"
+          >
             <span>
-              Ver os números 
+              Conhecer
             </span>
             <span>
               <ChevronRight />
             </span>
-          </div>
+          </a>
 
         </div>
       </div>
