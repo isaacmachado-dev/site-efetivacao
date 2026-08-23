@@ -12,7 +12,15 @@ export function Hero() {
         className="-top-40 left-0 md:left-60 md:-top-20"
       />
       
-      <div className="flex h-full">
+      <div className="flex flex-col md:flex-row h-full">
+        {/* Right content: fundo absoluto atrás do texto no mobile; lado direito no desktop */}
+        <div className="md:flex-1 md:order-2 absolute inset-0 md:relative md:inset-auto opacity-30 md:opacity-100 pointer-events-none md:pointer-events-auto">
+          <SplineScene
+            scene="/scene.splinecode"
+            className="w-full h-full"
+          />
+        </div>
+
         {/* Left content */}
         <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
@@ -22,24 +30,15 @@ export function Hero() {
             Dois estagiários. 10 meses. Centenas de chamados resolvidos e infraestruturas redefinidas. Descubra por que manter esse time é a melhor decisão estratégica.
           </p>
 
-          <div className="mt-10 bg-brand-main w-fit px-6 py-3 rounded-md flex flex-row box-shadow-md font-semibold">
+          <div className="mt-10 bg-brand-main w-full px-6 py-3 rounded-md flex flex-row box-shadow-md font-semibold text-white md:w-fit justify-between gap-2">
             <span>
               Ver os números 
             </span>
             <span>
               <ChevronRight />
             </span>
-
           </div>
 
-        </div>
-
-        {/* Right content */}
-        <div className="flex-1 relative">
-          <SplineScene 
-            scene="/scene.splinecode"
-            className="w-full h-full"
-          />
         </div>
       </div>
     </Card>

@@ -10,10 +10,10 @@ export function Impacto() {
             </div>
 
             <div className="text-sm text-center">
-                Como a nossa permanência como efetivos transforma os gargalos em soluções robustas.
+                Como a nossa permanência como efetivos diminui os gargalos de entregas.
             </div>
 
-            <div className="mt-50 flex flex-row gap-8 max-w-[1280px] w-full mx-auto">
+            <div className="mt-20 flex flex-col md:flex-row gap-8 max-w-[1280px] w-full mx-auto">
 
                 <div className="flex-1 flex flex-col gap-4 bg-white/5 rounded-[20px] p-8">
                     <span className="text-sm font-semibold text-brand-accent">Tempo de Resposta ↓</span>

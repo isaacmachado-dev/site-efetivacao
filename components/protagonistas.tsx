@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Protagonistas() {
     return (
         <>
-            <div className="flex flex-col mt-100 gap-2">
+            <div className="flex flex-col mt-100 mb-20 gap-2">
                 <div className="text-center text-brand-accent">
                     Os protagonistas
                 </div>
@@ -17,17 +17,16 @@ export function Protagonistas() {
                 </div>
             </div>
 
-           <div className=" mt-50 flex flex-col gap-10">
+           <div className="flex flex-col gap-10">
                 <div className="md:mr-[10vw] flex flex-row gap-4 bg-brand-secondary p-10 rounded-3xl">
                     <div className="flex flex-col my-auto">
                         <span className="text-3xl font-semibold">Isaac</span>
-                        <span className="mt-4 text-sm">Estagiário de Desenvolvimento</span>
+                        <span className="mt-4 text-sm text-brand-accent">Estagiário de Desenvolvimento</span>
                         
                         {/* Container das tags alterado para flex-col (coluna) */}
                         <div className="flex flex-col mt-5 gap-4">
                             
-                            {/* Primeira linha com 2 itens */}
-                            <div className="flex flex-row gap-4">
+                            <div className="flex flex-col md:flex-row gap-4">
                                 <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC]">
                                     Desenvolvedor
                                 </span>
@@ -37,7 +36,7 @@ export function Protagonistas() {
                             </div>
                             
                             <div className="flex flex-row gap-4">
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC] mx-auto">
+                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC] w-full md:text-center">
                                     Suporte N1-N3
                                 </span>
                             </div>
@@ -64,21 +63,21 @@ export function Protagonistas() {
                     
                     <div className="flex flex-col my-auto">
                         <span className="text-3xl font-semibold">Danilo</span>
-                        <span className="mt-4 text-sm">Estagiário de Infraestrutura</span>
+                        <span className="mt-4 text-sm text-brand-accent">Estagiário de Infraestrutura</span>
                         
                         <div className="flex flex-col mt-5 gap-4">
                             
-                            <div className="flex flex-row gap-4">
+                            <div className="flex flex-col md:flex-row gap-4">
                                 <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC]">
-                                    Desenvolvedor
+                                    GLPI-Admin
                                 </span>
                                 <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC]">
-                                    Full-Stack
+                                    Redes
                                 </span>
                             </div>
                             
                             <div className="flex flex-row gap-4">
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC] mx-auto">
+                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC] w-full md:text-center">
                                     Suporte N1-N3
                                 </span>
                             </div>
