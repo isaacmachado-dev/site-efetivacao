@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 
 export function Hero() {
   return (
-    <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
+    <Card className="w-full h-[600px] bg-brand-secondary relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
       />
@@ -16,7 +16,7 @@ export function Hero() {
         {/* Left content */}
         <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-            A DSOP merece <span>mais</span>
+            A DSOP merece <span className="text-brand-main ">mais</span>
           </h1>
           <p className="mt-4 text-neutral-300 max-w-lg">
             Dois estagiários. 10 meses. Centenas de chamados resolvidos e infraestruturas redefinidas. Descubra por que manter esse time é a melhor decisão estratégica.
@@ -24,7 +24,7 @@ export function Hero() {
 
           <div className="mt-10 bg-brand-main w-fit px-6 py-3 rounded-md flex flex-row box-shadow-md font-semibold">
             <span>
-              Ver os números
+              Ver os números 
             </span>
             <span>
               <ChevronRight />

@@ -13,7 +13,7 @@ export function Protagonistas() {
                 </div>
 
                 <div className="text-sm">
-                    Conheça a dupla dinâmica por trás de entregas de Dev, Infra e Suporte da DSOP.
+                    Conheça a dupla dinâmica por trás de entregas de DEV, Infra, Suporte, Audiovisual e Editorial da DSOP.
                 </div>
             </div>
 
@@ -55,7 +55,7 @@ export function Protagonistas() {
 
                 <div className="md:ml-[10vw] flex flex-row gap-5 bg-brand-secondary p-10 rounded-3xl">
                      <Image 
-                        src="/rock-lee.jpg"
+                        src="/robin.jpg"
                         alt="Isaac"
                         width={200}
                         height={200}
