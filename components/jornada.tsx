@@ -3,25 +3,25 @@ const marcos = [
         numero: "1",
         titulo: "Mês 1: Primeiros chamados",
         descricao:
-            "Adaptação rápida à cultura DSOP, mapeamento inicial do parque físico e primeiros chamados resolvidos.",
+            "Adaptação a cultura DSOP, mapeamento inicial e primeiros chamados resolvidos.",
     },
     {
         numero: "2",
         titulo: "Mês 3: Autonomia total",
         descricao:
-            "Configurações avançadas de rede, desenvolvimento de pequenas automações e suporte N2 fluindo naturalmente.",
+            "Apoio em configurações de rede, desenvolvimento de pequenas automações e protótipos, suporte fluindo naturalmente.",
     },
     {
         numero: "3",
         titulo: "Mês 6: Referência técnica",
         descricao:
-            "Consolidação na arquitetura de chamados do GLPI e responsabilidade direta pela estabilidade das APIs.",
+            "Consolidação na arquitetura de chamados do GLPI e suportes N2 acontecendo.",
     },
     {
         numero: "4",
-        titulo: "Mês 10: Prontos para efetivar",
+        titulo: "Mês 10: Dupla pronta para efetivar",
         descricao:
-            "Entendimento completo das dores da empresa e aptidão total para liderar demandas críticas em tempo integral.",
+            "Entendimento e aptidão total para desenvolver demandas críticas e responsabilidades em tempo integral.",
     },
 ];
 
@@ -40,7 +40,7 @@ export function Jornada() {
                 De novos ingressantes a pilares técnicos. Uma retrospectiva rápida da nossa curva de aprendizado.
             </div>
 
-            <div className="mt-50 grid grid-cols-1 md:grid-cols-4 gap-6 max-w-[1340px] w-full mx-auto">
+            <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-6 max-w-[1340px] w-full mx-auto">
 
                 {marcos.map((marco) => (
                     <div key={marco.numero} className="flex flex-col gap-4">
