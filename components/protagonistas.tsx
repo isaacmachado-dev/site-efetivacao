@@ -44,11 +44,11 @@ export function Protagonistas() {
                         </div>
                     </div>
                     <Image 
-                        src="/isaac-3.png"
+                        src="/isaac-pro.jpg"
                         alt="Isaac"
                         width={150}
                         height={150}
-                        className="rounded-full object-cover"
+                        className="w-[150px] h-[150px] shrink-0 self-center rounded-full object-cover"
                     />
                 </div>
 
@@ -58,7 +58,7 @@ export function Protagonistas() {
                         alt="Danilo Neri"
                         width={200}
                         height={200}
-                        className="rounded-full object-cover"
+                        className="w-[200px] h-[200px] shrink-0 self-center rounded-full object-cover"
                     />
                     
                     <div className="flex flex-col my-auto">
