@@ -19,7 +19,7 @@ export function Hero() {
   }, []);
 
   return (
-    <Card className="w-full h-[600px] bg-brand-secondary relative overflow-hidden">
+    <Card className="w-full h-[80svh] bg-brand-secondary relative overflow-hidden">
       {/* Fundo cinético: grid interativo que deforma com o cursor */}
       <KineticGrid className="-z-0" />
 
