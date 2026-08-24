@@ -2,8 +2,8 @@
 
 import confetti from "canvas-confetti";
 import { useState } from "react";
-import { ChartBarStacked } from "../ui/chart-bar-stacked";
 import { SectionReveal } from "../SectionReveal";
+import { ChartBarStacked } from "../ui/chart-bar-stacked";
 
 export function Crescimento() {
     const [efetivacao, setEfetivacao] = useState(false);
@@ -24,8 +24,11 @@ export function Crescimento() {
     
     return (
         <>
-           <SectionReveal className="flex flex-col mt-100 gap-3 items-center mb-20">
-                <div className="text-center text-brand-accent font-semibold text-sm">
+           <SectionReveal className="mt-100 flex flex-col  gap-3 items-center mb-20">
+                <div 
+                    id="crescimento"
+                    className="text-center text-brand-accent uppercase font-mono mb-5 text-sm font-semibold"
+                >
                     Crescimento Exponencial
                 </div>
 
@@ -34,10 +37,10 @@ export function Crescimento() {
                 </div>
 
                 <div className="text-center text-lg text-zinc-400">
-                    Com a efetivação, passamos da jornada parcial (6h) para o tempo integral (8h). Veja a matemática.
+                    Com a efetivação, passamos da jornada parcial (6h) para o tempo integral (8h). Confira a simulação.
                 </div>
 
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 mt-20">
 
                 <div className="flex flex-col md:flex-row gap-6">
                     <div className="flex flex-col gap-6 max-w-[500px] mx-auto">

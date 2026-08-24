@@ -10,6 +10,7 @@ interface SectionRevealProps {
     from?: "bottom" | "top" | "left" | "right";
     /** Duração da animação em segundos */
     duration?: number;
+    id?: string;
 }
 
 /**
@@ -18,6 +19,7 @@ interface SectionRevealProps {
  * viewport, disparando uma única vez (once).
  */
 export function SectionReveal({
+    id,
     children,
     className,
     from = "bottom",

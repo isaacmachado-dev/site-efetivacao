@@ -98,7 +98,7 @@ export function ChartBarStacked({ efetivacao }: { efetivacao?: boolean }) {
 
   return (
     // A MUDANÇA ESTÁ AQUI NA LINHA ABAIXO: Adicionados w-full, flex-1 e min-w-0
-    <Card className={`flex flex-col w-full flex-1 min-w-0 transition-all duration-500 ease-out ${efetivacao ? 'border border-brand-main/30 bg-brand-main/10 z-10' : 'border border-transparent z-0'}`}>
+    <Card className={`flex flex-col w-full flex-1 min-w-0 transition-all duration-500 ease-out ${efetivacao ? 'border border-brand-main/30 -mt-1.5 bg-brand-main/10 z-10' : 'border border-transparent z-0'}`}>
       <CardHeader>
         <CardTitle className={`text-zinc-400 ${efetivacao ? 'text-[#c084fc]' : 'text-zinc-400'}`}>Número de chamados</CardTitle>
       </CardHeader>

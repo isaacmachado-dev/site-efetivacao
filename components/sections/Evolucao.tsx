@@ -5,19 +5,19 @@ const marcos = [
         numero: "1",
         titulo: "Mês 1: Primeiros chamados",
         descricao:
-            "Adaptação a cultura DSOP, mapeamento inicial e primeiros chamados resolvidos.",
+            "Chegada na DSOP, muito sofrimento com o ERPFLEX e compras. Mas muita ajuda no começo, VALEU PEDRÃO, JON, CHARLES E WILL.",
     },
     {
         numero: "2",
-        titulo: "Mês 3: Autonomia total",
+        titulo: "Mês 3: Autonomia?",
         descricao:
-            "Apoio em configurações de rede, desenvolvimento de pequenas automações e protótipos, suporte fluindo naturalmente.",
+            "Revisão do parque de máquinas e suportes fluindo naturalmente. OBRIGADO JON.",
     },
     {
         numero: "3",
         titulo: "Mês 6: Referência técnica",
         descricao:
-            "Consolidação na arquitetura de chamados do GLPI e suportes N2 acontecendo.",
+            "Apoio em configurações de rede, primeiros protótipos de projetos e desenvolvimento de soluções, registrando intensidade e presença disponível.",
     },
     {
         numero: "4",
@@ -27,19 +27,24 @@ const marcos = [
     },
 ];
 
-export function Jornada() {
+export function Evolucao() {
     return (
-        <SectionReveal className="flex flex-col mt-100 gap-2">
-            <div className="text-center text-brand-accent">
+        <SectionReveal 
+            className="flex flex-col gap-2"
+        >
+            <div 
+                id="evolucao"
+                className="mt-100 text-center text-brand-accent uppercase font-mono mb-5 text-sm font-semibold"
+            >
                 Nossa Evolução
             </div>
 
             <div className="text-center text-3xl font-semibold">
-                A Jornada de 10 Meses
+                Um resumo da nossa jornada
             </div>
 
             <div className="text-sm text-center">
-                De novos ingressantes a pilares técnicos. Uma retrospectiva rápida da nossa curva de aprendizado.
+                De novos ingressantes para...
             </div>
 
             <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-6 max-w-[1340px] w-full mx-auto">

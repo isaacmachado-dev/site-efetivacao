@@ -5,7 +5,7 @@ export function Protagonistas({ className }: { className?: string }) {
     return (
         <>
             <div id="protagonistas" className="flex flex-col mt-100 mb-20 gap-2 scroll-mt-10">
-                <div className="text-center text-brand-accent">
+                <div className="font-semibold text-center text-brand-accent uppercase font-mono mb-5 text-sm">
                     Os protagonistas
                 </div>
 
@@ -27,17 +27,17 @@ export function Protagonistas({ className }: { className?: string }) {
                         {/* Container das tags alterado para flex-col (coluna) */}
                         <div className="flex flex-col mt-5 gap-4">
                             
-                            <div className="flex flex-col md:flex-row gap-4">
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC]">
+                            <div className="flex flex-col md:flex-row gap-4 mt-3">
+                                <span className="rounded-full px-4 py-1 bg-brand-main/20 text-[#C084FC]">
                                     Desenvolvedor
                                 </span>
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC]">
+                                <span className="rounded-full px-4 py-1 bg-brand-main/20 text-[#C084FC]">
                                     Full-Stack
                                 </span>
                             </div>
                             
                             <div className="flex flex-row gap-4">
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC] w-full md:text-center">
+                                <span className="rounded-full px-4 py-1 bg-brand-main/20 text-[#C084FC] w-full md:text-center">
                                     Suporte N1-N3
                                 </span>
                             </div>
@@ -47,9 +47,9 @@ export function Protagonistas({ className }: { className?: string }) {
                     <Image 
                         src="/isaac-pro.jpg"
                         alt="Isaac"
-                        width={150}
-                        height={150}
-                        className="w-[150px] h-[150px] shrink-0 self-center rounded-full object-cover"
+                        width={200}
+                        height={200}
+                        className="w-[200px] h-[200px] shrink-0 self-center rounded-full object-cover"
                     />
                 </div>
 
@@ -66,19 +66,19 @@ export function Protagonistas({ className }: { className?: string }) {
                         <span className="text-3xl font-semibold">Danilo</span>
                         <span className="mt-4 text-sm text-brand-accent">Estagiário de Infraestrutura</span>
                         
-                        <div className="flex flex-col mt-5 gap-4">
+                         <div className="flex flex-col mt-5 gap-4">
                             
-                            <div className="flex flex-col md:flex-row gap-4">
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC]">
-                                    GLPI-Admin
+                            <div className="flex flex-col md:flex-row gap-4 mt-3">
+                                <span className="rounded-full px-4 py-1 bg-brand-main/20 text-[#C084FC]">
+                                    Infraestrutura admin.
                                 </span>
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC]">
+                                <span className="rounded-full px-4 py-1 bg-brand-main/20 text-[#C084FC]">
                                     Redes
                                 </span>
                             </div>
                             
                             <div className="flex flex-row gap-4">
-                                <span className="rounded-xl px-2 py-1 bg-brand-main/20 text-[#C084FC] w-full md:text-center">
+                                <span className="rounded-full px-4 py-1 bg-brand-main/20 text-[#C084FC] w-full md:text-center">
                                     Suporte N1-N3
                                 </span>
                             </div>

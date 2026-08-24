@@ -1,8 +1,8 @@
 'use client'
 
 import { Card } from "@/components/ui/card";
+import KineticGrid from "@/components/ui/kinetic-grid";
 import { SplineScene } from "@/components/ui/splite";
-import { Spotlight } from "@/components/ui/spotlight";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -20,9 +20,12 @@ export function Hero() {
 
   return (
     <Card className="w-full h-[600px] bg-brand-secondary relative overflow-hidden">
-      <Spotlight
+      {/* Fundo cinético: grid interativo que deforma com o cursor */}
+      <KineticGrid className="-z-0" />
+
+      {/* <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
-      />
+      /> */}
 
       <div className="flex flex-col md:flex-row h-full">
         {/* Right content: fundo absoluto atrás do texto no mobile; lado direito no desktop */}
@@ -43,7 +46,9 @@ export function Hero() {
         </div>
 
         {/* Left content */}
-        <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
+        <div 
+          id="inicio"
+          className="flex-1 p-8 relative z-10 flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             A DSOP merece <span className="text-brand-main ">mais</span>
           </h1>
