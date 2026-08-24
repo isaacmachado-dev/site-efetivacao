@@ -21,7 +21,7 @@ export function NavRail() {
         <nav
             aria-hidden={!visible}
             className={cn(
-                "fixed top-50 ml-10 mr-auto z-50 transition-opacity duration-500",
+                "fixed top-50 ml-2 md:ml-10 mr-auto z-50 transition-opacity duration-500",
                 visible ? "opacity-100" : "opacity-0 pointer-events-none"
             )}
         >

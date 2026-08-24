@@ -19,7 +19,7 @@ export function Protagonistas({ className }: { className?: string }) {
             </div>
 
            <SectionReveal className={`flex flex-col gap-10 ${className ?? ""}`}>
-                <div className="md:mr-[10vw] flex flex-row gap-4 bg-brand-secondary p-10 rounded-3xl">
+                <div className="md:mr-[10vw] flex flex-row gap-4 bg-brand-secondary p-2 md:p-10  rounded-3xl">
                     <div className="flex flex-col my-auto">
                         <span className="text-3xl font-semibold">Isaac</span>
                         <span className="mt-4 text-sm text-brand-accent">Estagiário de Desenvolvimento</span>
@@ -49,17 +49,17 @@ export function Protagonistas({ className }: { className?: string }) {
                         alt="Isaac"
                         width={200}
                         height={200}
-                        className="w-[200px] h-[200px] shrink-0 self-center rounded-full object-cover"
+                        className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] shrink-0 self-center rounded-full object-cover"
                     />
                 </div>
 
-                <div className="md:ml-[10vw] flex flex-row gap-5 bg-brand-secondary p-10 rounded-3xl">
+                <div className="md:ml-[10vw] flex flex-row gap-5 bg-brand-secondary p-2 md:p-10 rounded-3xl">
                      <Image 
                         src="/danilo.jpg"
                         alt="Danilo Neri"
                         width={200}
                         height={200}
-                        className="w-[200px] h-[200px] shrink-0 self-center rounded-full object-cover"
+                        className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] shrink-0 self-center rounded-full object-cover"
                     />
                     
                     <div className="flex flex-col my-auto">

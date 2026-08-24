@@ -126,17 +126,18 @@ export function ChartBarStacked({ efetivacao }: { efetivacao?: boolean }) {
                 />
                 <ChartTooltip content={<ChartTooltipContent hideLabel />} />
                 <ChartLegend content={<ChartLegendContent />} />
-                <Bar
-                  dataKey="chamados_abertos"
-                  stackId="a"
-                  fill="var(--color-chamados_abertos)"
-                  radius={[4, 4, 0, 0]}
-                />
+              
                 <Bar
                   dataKey="chamados_solucionados_ou_fechados"
                   stackId="a"
                   fill="var(--color-chamados_solucionados_ou_fechados)"
                   radius={[0, 0, 4, 4]}
+                />
+                <Bar
+                  dataKey="chamados_abertos"
+                  stackId="a"
+                  fill="var(--color-chamados_abertos)"
+                  radius={[4, 4, 0, 0]}
                 />
               </BarChart>
             </ChartContainer>
@@ -180,7 +181,7 @@ export function ChartBarStacked({ efetivacao }: { efetivacao?: boolean }) {
       <CardFooter className="flex-col items-start gap-2 text-sm mt-auto ">
         <div className="font-bold flex flex-col items-start gap-2">
             <span className="text-brand-accent transition-colors duration-500">
-                {efetivacao ? "Capacidade para novos atendimentos" : "Total de chamados hoje"}
+                {efetivacao ? "Capacidade para novos atendimentos" : "Total de chamados até hoje"}
             </span>
             <span className={`text-3xl font-extrabold transition-all duration-500 ${efetivacao ? 'text-[#c084fc]' : 'text-white'}`}>
                 {efetivacao ? `${Math.floor(capacidade_anual_efetivado / 100) * 100}+` : total_atual}
