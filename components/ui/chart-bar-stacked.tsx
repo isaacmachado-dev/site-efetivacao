@@ -64,14 +64,17 @@ function montarChartData(usuarios: UsuarioAPI[], projetado: boolean): ChartUser[
 }
 
 const chartConfig = {
-  chamados_solucionados_ou_fechados: {
-    label: "Fechados",
-    color: "var(--chart-1)",
-  },
+  
   chamados_abertos: {
     label: "Abertos",
     color: "var(--chart-2)",
   },
+
+  chamados_solucionados_ou_fechados: {
+    label: "Fechados",
+    color: "var(--chart-1)",
+  },
+ 
 } satisfies ChartConfig
 
 export function ChartBarStacked({ efetivacao }: { efetivacao?: boolean }) {
@@ -124,16 +127,16 @@ export function ChartBarStacked({ efetivacao }: { efetivacao?: boolean }) {
                 <ChartTooltip content={<ChartTooltipContent hideLabel />} />
                 <ChartLegend content={<ChartLegendContent />} />
                 <Bar
-                  dataKey="chamados_solucionados_ou_fechados"
-                  stackId="a"
-                  fill="var(--color-chamados_solucionados_ou_fechados)"
-                  radius={[0, 0, 4, 4]}
-                />
-                <Bar
                   dataKey="chamados_abertos"
                   stackId="a"
                   fill="var(--color-chamados_abertos)"
                   radius={[4, 4, 0, 0]}
+                />
+                <Bar
+                  dataKey="chamados_solucionados_ou_fechados"
+                  stackId="a"
+                  fill="var(--color-chamados_solucionados_ou_fechados)"
+                  radius={[0, 0, 4, 4]}
                 />
               </BarChart>
             </ChartContainer>
@@ -153,18 +156,21 @@ export function ChartBarStacked({ efetivacao }: { efetivacao?: boolean }) {
                 />
                 <ChartTooltip content={<ChartTooltipContent hideLabel />} />
                 <ChartLegend content={<ChartLegendContent />} />
-                <Bar
-                  dataKey="chamados_solucionados_ou_fechados"
-                  stackId="a"
-                  fill="var(--color-chamados_solucionados_ou_fechados)"
-                  radius={[0, 0, 4, 4]}
-                />
+              
                 <Bar
                   dataKey="chamados_abertos"
                   stackId="a"
                   fill="var(--color-chamados_abertos)"
                   radius={[4, 4, 0, 0]}
                 />
+
+                <Bar
+                  dataKey="chamados_solucionados_ou_fechados"
+                  stackId="a"
+                  fill="var(--color-chamados_solucionados_ou_fechados)"
+                  radius={[0, 0, 4, 4]}
+                />
+
               </BarChart>
             </ChartContainer>
           </div>

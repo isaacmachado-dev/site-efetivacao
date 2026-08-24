@@ -1,7 +1,7 @@
 export function Footer() {
     return (
         <>
-            <footer className="flex flex-col  gap-6 font-[family-name:var(--font-indie-flower)] mt-40 mb-20">
+            <footer className="flex flex-col  gap-6 font-[family-name:var(--font-indie-flower)] mt-40">
 
                 <hr className="w-full border-t border-brand-secondary" /> 
 
@@ -17,6 +17,8 @@ export function Footer() {
                     </span>
 
                     <span className="md:text-8xl font-bold text-white my-auto">
+                        
+                        <span className="line-through">Bigode</span>
                         Danilo
                     </span>
                 </div>
