@@ -53,7 +53,7 @@ export function Crescimento() {
                             </div>
                             <div className={`transition-all duration-500 flex-1 flex flex-col gap-2 rounded-2xl p-6 ${efetivacao ? 'border border-brand-main/30 bg-brand-main/10 scale-110 text-[#c084fc]' : 'border border-transparent bg-white/5 text-zinc-400'}`}>
                                 <span className="text-sm font-semibold">Efetivo</span>
-                                <span className="text-3xl font-extrabold">8h diárias</span>
+                                <span className="text-3xl font-extrabold">9h diárias</span>
                             </div>
                         </div>
 
@@ -65,7 +65,7 @@ export function Crescimento() {
                         >
                             {efetivacao && (
                                 <span className="text-5xl font-extrabold text-brand-accent">
-                                    +33% Capacidade
+                                    +50% Capacidade
                                 </span>
                                 )
                             }

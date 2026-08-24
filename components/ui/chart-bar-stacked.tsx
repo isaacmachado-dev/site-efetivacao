@@ -26,7 +26,7 @@ const API_URL = process.env.NEXT_PUBLIC_N8N_INTELIGENCIA_API_URL
 // Total hoje foi acumulado em 10 meses de estágio.
 // Projeção efetivada: +33% de capacidade/mês sobre a média mensal atual.
 const MESES_TRABALHADOS = 10
-const FATOR_EFETIVACAO = 1.33
+const FATOR_EFETIVACAO = 1.50
 
 type UsuarioAPI = {
     nome: string
