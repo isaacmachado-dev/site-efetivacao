@@ -10,10 +10,14 @@ export default function Home() {
   return (
     
     <>
+      <div className="p-4 md:p-15">
+        <Hero />
+      </div>
+
+
       <NavRail />
       <main className="flex flex-col min-h-screen w-full items-center justify-center p-4 md:p-30">
 
-        <Hero />
 
         <Protagonistas />
 
