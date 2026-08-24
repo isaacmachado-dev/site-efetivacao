@@ -37,7 +37,7 @@ export function Crescimento() {
                 </div>
 
                 <div className="text-center text-lg text-zinc-400">
-                    Com a efetivação, passamos da jornada parcial (6h) para o tempo integral (8h). Confira a simulação.
+                    Com a efetivação, passamos da jornada parcial (6h) para o tempo integral (9). Confira a simulação.
                 </div>
 
             <div className="flex flex-col gap-10 mt-20">
@@ -57,7 +57,7 @@ export function Crescimento() {
                             </div>
                         </div>
 
-                        {/* Card +33% Capacidade */}
+                        {/* Card +50% Capacidade */}
                         <div 
                             className={`flex flex-col gap-3 rounded-[20px] p-8 transition-all duration-500 ${
                                 efetivacao ? 'bg-brand-main/10 border border-brand-main/30 scale-105' : 'bg-white/5 border border-transparent'
