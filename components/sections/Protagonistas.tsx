@@ -63,6 +63,7 @@ export function Protagonistas({ className }: { className?: string }) {
                     />
                     
                     <div className="flex flex-col my-auto">
+                        <span className="line-through">Bigode</span>
                         <span className="text-3xl font-semibold">Danilo</span>
                         <span className="mt-4 text-sm text-brand-accent">Estagiário de Infraestrutura</span>
                         

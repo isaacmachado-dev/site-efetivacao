@@ -145,5 +145,8 @@
   }
   html {
     @apply font-sans;
+    /* Âncoras (#hash) param com o alvo centralizado verticalmente na tela */
+    scroll-behavior: smooth;
+    scroll-padding-block: calc(50vh - 50%);
   }
 }

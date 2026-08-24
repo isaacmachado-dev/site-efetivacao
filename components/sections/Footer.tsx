@@ -18,7 +18,6 @@ export function Footer() {
 
                     <span className="md:text-8xl font-bold text-white my-auto">
                         
-                        <span className="line-through">Bigode</span>
                         Danilo
                     </span>
                 </div>
