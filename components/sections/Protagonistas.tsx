@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { SectionReveal } from "../SectionReveal";
 
-export function Protagonistas() {
+export function Protagonistas({ className }: { className?: string }) {
     return (
         <>
             <div id="protagonistas" className="flex flex-col mt-100 mb-20 gap-2 scroll-mt-10">
@@ -17,7 +18,7 @@ export function Protagonistas() {
                 </div>
             </div>
 
-           <div className="flex flex-col gap-10">
+           <SectionReveal className={`flex flex-col gap-10 ${className ?? ""}`}>
                 <div className="md:mr-[10vw] flex flex-row gap-4 bg-brand-secondary p-10 rounded-3xl">
                     <div className="flex flex-col my-auto">
                         <span className="text-3xl font-semibold">Isaac</span>
@@ -87,7 +88,7 @@ export function Protagonistas() {
                    
                 </div>
 
-            </div>
+            </SectionReveal>
         </>
     );
 }

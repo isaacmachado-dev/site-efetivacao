@@ -1,3 +1,5 @@
+import { SectionReveal } from "../SectionReveal";
+
 const marcos = [
     {
         numero: "1",
@@ -27,7 +29,7 @@ const marcos = [
 
 export function Jornada() {
     return (
-        <div className="flex flex-col mt-100 gap-2">
+        <SectionReveal className="flex flex-col mt-100 gap-2">
             <div className="text-center text-brand-accent">
                 Nossa Evolução
             </div>
@@ -59,6 +61,6 @@ export function Jornada() {
 
             </div>
 
-        </div>
+        </SectionReveal>
     );
 }

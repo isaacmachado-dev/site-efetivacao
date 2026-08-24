@@ -1,6 +1,8 @@
+import { SectionReveal } from "../SectionReveal";
+
 export function Impacto() {
     return (
-        <div className="flex flex-col mt-100 gap-2">
+        <SectionReveal className="flex flex-col mt-100 gap-2">
             <div className="text-center text-brand-accent">
                 TI Sem Gargalos
             </div>
@@ -37,6 +39,6 @@ export function Impacto() {
 
             </div>
 
-        </div>
+        </SectionReveal>
     );
 }
