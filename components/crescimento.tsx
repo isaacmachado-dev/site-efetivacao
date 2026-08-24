@@ -84,7 +84,7 @@ export function Crescimento() {
                         {/* Toggle Ativar Efetivação DSOP */}
                         <button
                             type="button"
-                            onPointerDown={(e) => { e.preventDefault(); handleToggle(); }}
+                            // onPointerDown={(e) => { e.preventDefault(); handleToggle(); }}
                             onClick={handleToggle}
                             style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
                             className={`relative z-50 flex flex-row items-center justify-between gap-3 w-full text-left transition-colors duration-200 rounded-2xl p-4 cursor-pointer touch-manipulation select-none ${efetivacao ? 'bg-brand-main/10 border border-brand-main/30 md:scale-105' : 'bg-white/5 border border-transparent hover:bg-white/10'}`}
